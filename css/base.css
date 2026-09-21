@@ -1,0 +1,98 @@
+:root {
+    --principal: #008B8B;
+    --secundario: #000080;
+    --texto-principal: #eee;
+    --text-contraste: #111;
+    --bg: #ebebeb;
+}
+
+html, body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--bg);
+    font-family: "Calibri", sans-serif;
+}
+
+header .principal {
+    padding: 20px 20px 0px 20px;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--principal);
+    color: var(--texto-principal);
+}
+
+header .principal * {
+    margin: 0;
+}
+
+header .logo img {
+    height: 80px;
+    object-fit: contain;
+}
+
+.divisao {
+    height: 50px;
+    background-color: #008B8B;
+    background: linear-gradient(180deg, var(--principal) 50%, #ffffff00 60%, var(--principal) 70%, #ffffff00 80%);
+}
+
+main {
+    flex-grow: 1;
+}
+
+footer {
+    background-color: var(--principal);
+    color: var(--texto-principal);
+    padding: 1vh;
+    display: flex;
+    justify-content: end;
+}
+
+.dropdown {
+    gap: 5px;
+    z-index: 1;
+    display: none;
+    padding: 0.2em;
+    min-height: 1em;
+    width: 90px;
+    margin-top: -18px;
+    position: absolute;
+    flex-direction: column;
+    background-color: var(--bg);
+    border: 2px solid var(--secundario);
+}
+
+.dropdown * {
+    text-shadow: none;
+    color: var(--secundario);
+    text-decoration: none;
+    transition: .1s;
+}
+
+.dropdown *:hover {
+    font-size: large;
+    text-decoration: underline;
+}
+
+#navegacao .botao {
+    border: 2px solid var(--secundario);
+    background-color: var(--bg);
+    color: var(--secundario);
+    font-size: large;
+    padding: .5em;
+    text-shadow: none;
+    user-select: none;
+    transition: .2s;
+}
+
+#navegacao:hover .dropdown {
+    border-top: 0px;
+    display: flex;
+}
