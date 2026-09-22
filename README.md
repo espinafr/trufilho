@@ -1,6 +1,8 @@
 # P1 Programação Frontend Design
 
 ## Resolvendo conflitos
+<img width="374" height="106" alt="Erro de push" src="https://github.com/user-attachments/assets/4f094d0c-363c-43f2-8b77-ed74a4efba30" />
+
 Caso você tenha feito uma alteração nos arquivos e quer dar push para o GitHub mas o histórico do servidor está mais atualizado que o da sua máquina, execute o comando `git pull --rebase origin main` no terminal. Esse comando vai puxar todas as alterações do servidor para a sua máquina linearmente, sem criar várias ramificações no controle de versões.  
 
 Caso haja algum conflito, o próprio vscode vai te auxiliar a resolvê-lo (só escolher a versão do código que deseja manter). Por fim, dando rebase e resolvendo os conflitos caso necessário, só dar push novamente.
