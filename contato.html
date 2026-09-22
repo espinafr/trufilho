@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZikaByte</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/contato.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="manifest" href="img/site.webmanifest">
+</head>
+<body>
+    <header>
+        <div class="principal">
+            <div class="titulo">
+                <div class="logo">
+                    <img src="img/logotudo.png" alt="Logo do site">
+                </div>
+                <h3>Loja Montagem de Computadores</h3>
+            </div>
+            <div id="navegacao">
+                <p class="botao">Navegação</p>
+                <div class="dropdown">
+                    <a href="index.html">Home</a>
+                    <a href="produtos.html">Produtos</a>
+                    <a href="carrinho.html">Carrinho</a>
+                    <a href="blog.html">Blog</a>
+                    <a href="faq.html">FAQ</a>
+                    <a href="portfolio.html">Portifólio</a>
+                    <a href="sobrenos.html">Sobre nós</a>
+                    <a href="contato.html">Contato</a>
+                </div>
+            </div>
+        </div>
+        <div class="divisao"></div>
+    </header>
+    <main>
+        <div class="centralizado">
+            <div class="conteudo">
+                <h1>Contato</h1>
+                <p>Tem alguma dúvida, sugestão ou reclamação? Contate-nos!</p>
+            </div>
+            <form>
+                <input type="text" name="assunto" placeholder="Assunto" id="assunto">
+                <div class="info">
+                    <label for="email">Email: </label>
+                    <input type="email" name="email" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="seu@email.aqui">
+                    <label for="telefone">Telefone: </label>
+                    <input type="text" name="telefone" id="telefone" placeholder="(00) 00000-0000">
+                </div>
+                <textarea name="descricao" id="descricao" placeholder="Escreva aqui!"></textarea>
+                <input type="submit" value="Enviar" id="enviar">
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2026 ZikaByte. Nenhum direito reservado.</p>
+    </footer>
+</body>
+</html>
