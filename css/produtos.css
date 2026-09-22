@@ -15,25 +15,35 @@
 }
 .titulo2{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 45px ; font-size: bold;
-        text-align: right;
+    text-align: right;
 }
 
 .texto{
-    font-family: 'Hello', sans-serif; font-size: 25px;
+    font-family: 'Hello', sans-serif; 
+    font-size: 25px;
     font-weight: 500 ;
     text-align: left;
     width: 1000px;
 }
 .texto2{
-    font-family: 'Hello', sans-serif; font-size: 25px;
+    font-family: 'Hello', sans-serif; 
+    font-size: 25px;
     font-weight: 500 ;
     text-align: right;
-        width: 1000px;
+    width: 1000px;
 }
-
 
 .img{
     display: flex;
     align-items: end;
     width: 550px;
+}
+
+.div2{
+    text-align: right;
+}
+
+button {
+    font-family: 'Hello', sans-serif; 
+    font-size: 25px;
 }

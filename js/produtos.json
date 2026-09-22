@@ -1,10 +1,42 @@
 [
     {
-        "id": "0",
-        "nome": "rato sem mouse",
-        "descricao": "tecnologia inovadora diretamente da malásia",
-        "preco": 5.99,
+        "id": "1",
+        "nome": "Teclado sem fio e sem Teclado",
+        "descricao": "Cansado do barulho irritante dos switches mecânicos? Esqueça o clic-clic-clic. Apresentamos o AirType, o primeiro tecladodo mercado 100% sem fio e 100% sem teclas. Projetado para os verdadeiros entusiastas do minimalismo, o AirType redefine o conceito de periferia. Ele não ocupa espaço na sua mesa pela simples razão de que ele não está lá.",
+        "preco": 599.99,
         "quantidade": 20,
-        "img": "rato.webp"
+        "img": "/img/produtos/teclado.jpg"
+    },
+    {
+        "id": "2",
+        "nome": "Mouse Pad de Gelatina",
+        "descricao": "tecnologia inovadora diretamente da malásia",
+        "preco": 249.90,
+        "quantidade": 20,
+        "img": "/img/produtos/mousepad.jpg"
+    },
+    {
+        "id": "3",
+        "nome": "RAM Infinita",
+        "descricao": "tecnologia inovadora diretamente da malásia",
+        "preco": 5499.99,
+        "quantidade": 20,
+        "img": "/img/produtos/ram.jpg"
+    },
+    {
+        "id": "4",
+        "nome": "Mouse Sem Rato",
+        "descricao": "tecnologia inovadora diretamente da malásia",
+        "preco": 389.99,
+        "quantidade": 20,
+        "img": "/img/produtos/mouse.jpg"
+    },
+    {
+        "id": "5",
+        "nome": "Monitor Transparente",
+        "descricao": "tecnologia inovadora diretamente da malásia",
+        "preco": 749.90,
+        "quantidade": 20,
+        "img": "/img/produtos/monitor.jpg"
     }
 ]
