@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Carrinho</title>
+    <title>Carrinho - ZikaByte</title>
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/carrinho.css">
     <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
@@ -28,7 +28,7 @@
                     <a href="carrinho.html">Carrinho</a>
                     <a href="blog.html">Blog</a>
                     <a href="faq.html">FAQ</a>
-                    <a href="portfolio.html">Portfólio</a>
+                    <a href="portfolio.html">Portifólio</a>
                     <a href="sobrenos.html">Sobre nós</a>
                     <a href="contato.html">Contato</a>
                 </div>
@@ -36,15 +36,114 @@
         </div>
         <div class="divisao"></div>
     </header>
-    <main>
-        <h1>ByteCarrinho</h1>
-        <div style="text-align: center;">
-            <img src="img/carrinho/carrinhovazio.png" width="150px">
-        </div>
-        <h2>Seu carrinho está vazio</h2>
+
+    <main class="carrinho-container">
+        <h1>Seu carrinho</h1>
+        <p class="subtitulo">Confira o produto antes de finalizar a compra.</p>
+
+        <section class="carrinho-grid" id="carrinho-grid">
+            <div class="carrinho-lista" id="carrinho-lista">
+            </div>
+
+            <aside class="resumo">
+                <h2>Resumo do pedido</h2>
+                <div class="linha"><span>Subtotal</span><span>R$ <span id="subtotal"></span></span></span></div>
+                <div class="linha"><span>Frete</span><span>A calcular</span></div>
+                <hr>
+                <div class="linha total"><span>Total</span><span>R$ <span id="total"></span></span></div>
+                <button class="finalizar" type="button" onclick="carrinho_apagar(); window.location.reload();">Finalizar compra</button> <!-- apagar o carrinho e recarregar a página -->
+                <a class="continuar" href="produtos.html">Continuar comprando</a>
+            </aside>
+        </section>  
     </main>
+
     <footer>
         <p>&copy; 2026 ZikaByte. Nenhum direito reservado.</p>
     </footer>
+
+    <template id="produtotemplate"> <!-- lembrate: a tag <template> fica invisível no html e só é usada pelo javascript-->
+        <article class="produto-carrinho">
+            <img class="produto-imagem" src="" alt="Imagem do produto">
+            <div class="produto-info">
+                <h2 class="produto-nome"></h2>
+                <p class="produto-descricao"></p>
+                <div class="acoes-produto">
+                    <button class="adicionar" type="button">Adicionar +1</button>
+                    <button class="remover" type="button">Remover</button>
+                </div>
+            </div>
+            <div class="produto-preco">
+                <small>Preço</small>
+                <strong>R$ <span class="produto-preco-numero"></span></strong>
+            </div>
+        </article>
+    </template>
+
+    <script src="js/lib_carrinho.js"></script>
+    <script>
+        const template_produto = document.getElementById("produtotemplate");
+        const carrinho_grid = document.getElementById("carrinho-grid");
+
+        async function carregarJSON() {
+            try {
+                const arquivo = await fetch('js/produtos.json');
+                const dados = await arquivo.json();
+                
+                return dados;
+            } catch (erro) {
+                console.error("Erro durante o carregamento do json: ", erro);
+            }
+        }
+
+        function removerProduto(id) {
+            carrinho_remover(id);
+            window.location.reload();
+        }
+
+        function adicionarProduto(id) {
+            carrinho_adicionar(id);
+            window.location.reload();
+        }
+
+        async function iniciarCarrinho() {
+            const produtos = await carregarJSON(); 
+            const meu_carrinho = carrinho_itens();
+            const carrinho_lista = document.getElementById('carrinho-lista');
+            
+            let preco_total = 0;
+
+            /* loop para ver todos os ids de produtos no carrinho e depois procurar por eles no registro de produtos (do arquivo json) */
+            meu_carrinho.forEach(id_produto => {
+                let produto = produtos.find(produto => produto.id === id_produto); // procura dentro da lista de produtos json algum produto que tenho o mesmo id (produto.id) que o que está no carrinho (id_produto)
+
+                if (produto) {
+                    const clone = template_produto.content.cloneNode(true);
+
+                    clone.querySelector(".produto-nome").textContent = produto.nome;
+                    clone.querySelector(".produto-descricao").textContent = produto.descricao;
+                    clone.querySelector(".produto-preco-numero").textContent = produto.preco;
+                    clone.querySelector(".produto-imagem").src = produto.img;
+                    clone.querySelector(".remover").onclick = function() { removerProduto(produto.id) }; // funções pra serem executadas quando clicarem no botão
+                    clone.querySelector(".adicionar").onclick = function() { adicionarProduto(produto.id) };
+
+                    preco_total += produto.preco;
+
+                    carrinho_lista.appendChild(clone);  
+                }
+            });
+
+            /* muda subtotal e total */
+            const total = document.getElementById('total');
+            const subtotal = document.getElementById('subtotal');
+            total.textContent = preco_total;
+            subtotal.textContent = preco_total;
+        }
+
+        if (carrinho_quantidade() <= 0) {
+            carrinho_grid.innerHTML = "<a style='text-align: center;' href='produtos.html'>Você não tem nenhum produto no carrinho. Clique aqui para ver os produtos</a>"
+        } else {
+            iniciarCarrinho();
+        }
+    </script>
 </body>
 </html>

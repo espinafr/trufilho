@@ -10,7 +10,7 @@
         "id": "2",
         "nome": "Mouse Pad de Gelatina",
         "descricao": "Cansado de almofadas de pulso duras, sem vida e que acumulam poeira? Esqueça o poliéster. Apresentamos o GelType Comfort, o primeiro mouse pad do mundo feito 100% de gelatina industrial de alta densidade (e sabor morango). Projetado para profissionais que passam horas no computador e que frequentemente esquecem de almoçar, o GelType une o ápice da ergonomia à alta gastronomia de escritório.",
-        "preco": 249.90,
+        "preco": 249.99,
         "img": "/img/produtos/mousepad.jpg"
     },
     {
@@ -31,7 +31,7 @@
         "id": "5",
         "nome": "Monitor Transparente",
         "descricao": "O GlassView Infinite é o produto ideal para setups minimalistas extremistas, pessoas que gostam de limpar vidro com jornal e profissionais que querem fingir que estão analisando planilhas complexas enquanto apenas encaram o vazio.Estoque altamente frágil. Compre agora e receba um pano de microfibra e um frasco de limpa-vidros de brinde!",
-        "preco": 749.90,
+        "preco": 749.99,
         "img": "/img/produtos/monitor.jpg"
     }
     
