@@ -1,5 +1,8 @@
 # Últimas mudanças
-- Correção geral no menu de navegação, corrigindo português (Portifólio -> Portfólio)
+- Adição de regras de estilo no `base.css` para tornar o dropdown de navegação compatível com dispositivos touch.
+- Adição de `tabindex="0"` em todas as páginas no `<div id="navegacao">` para tornar o dropdown de navegação compatível com touch.
+- Correção geral no menu de navegação, corrigindo português (Portifólio -> Portfólio).
+- Remove "quantidade" de `produtos.json`.
 
 # Mudanças anteriores
-- Adição de `lib_carrinho.js`
+- Adição de `lib_carrinho.js`.

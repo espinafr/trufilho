@@ -1,0 +1,55 @@
+
+.faqzada {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px 20px 80px;
+}
+ /* Aqui ou */
+.cardFaq {
+  background-color: #008B8B;
+  border: 1px solid #111;
+  border-radius: 40px;
+  margin-bottom: 20px;
+  padding: 3.5px 25px;
+  transform: scale(1.1);
+
+}
+/* ou aqui */
+.perguntinha {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  color: #e6e6e6;
+  padding: 15px 0;
+  text-decoration: underline; 
+}
+
+
+.perguntinha:hover {
+  color: #e6e6e6;
+} 
+/* ou aqui */
+.cardFaq[open] .perguntinha {
+  color: #e6e6e6;
+  border-bottom: 2px solid #000080;
+
+
+}
+
+.respostinha {
+  color: #e6e6e6;
+  padding: 16px 0;
+
+}
+
+.introzada {
+  text-align: center;
+  padding: 10px 20px 30px;
+
+}
+
+.Perguntadas {
+  text-align: justify;
+  padding: 60px 20px 30px;
+
+}
+

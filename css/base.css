@@ -70,10 +70,11 @@ footer {
 }
 
 .dropdown * {
-    text-shadow: none;
-    color: var(--secundario);
     text-decoration: none;
-    transition: .1s;
+    color: var(--secundario);
+    font-size: medium;
+    padding: 0.2em;
+    transition: .2s;
 }
 
 .dropdown *:hover {
@@ -92,7 +93,11 @@ footer {
     transition: .2s;
 }
 
-#navegacao:hover .dropdown {
+/* style para fazer o dropdown aparecer */
+#navegacao:hover .dropdown, /* Quando o mouse estiver em cima do botão de navegação... */
+#navegacao:focus .dropdown, /* ...ou quando o botão de navegação estiver em foco (selecionado)... */
+#navegacao:focus-within .dropdown, /* ...ou quando o botão de navegação ou algum elemento dentro dele estiver em foco... */
+#navegacao:active .dropdown { /* ...ou quando o botão de navegação estiver ativo (clicado), altera o estilo do dropdown */
     border-top: 0px;
     display: flex;
 }
