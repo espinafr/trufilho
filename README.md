@@ -5,7 +5,7 @@ Para tornar o desenvolvimento do trabalho mais facilitado e padrão entre os gru
 
 Além disso, quando for adicionar algum arquivo `.css` específico para sua página, adicione-o diretamente na pasta `css`, sem criar alguma pasta extra dentro dela, a fim de evitar erros na hora da correção.
 
-A logo está localizada em `img/logotudo.png` e as fotos de produtos devem estar dentro de `img/produtos/*`. As imagens individuais de cada página devem estar dentro de uma pasta com o nome da sua página. Por exemplo, para o grupo cuidado do blog, suas imagens devem estar localizadas em `img/blog/*`.
+A logo está localizada em `img/logotudo.png` e as fotos de produtos devem estar dentro de `img/produtos/*`. As imagens individuais de cada página devem estar dentro de uma pasta com o nome da sua página. Por exemplo, para o grupo responsável pelo blog, suas imagens devem estar localizadas em `img/blog/*`.
 
 Para o caso do `.js`, adote a estrutura que achar necessária para a sua página, mas existem dois arquivos principais que podem ser usados através do site, sendo eles:
 - `produtos.json`
