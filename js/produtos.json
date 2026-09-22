@@ -1,10 +1,45 @@
 [
     {
         "id": "0",
-        "nome": "rato sem mouse",
-        "descricao": "tecnologia inovadora diretamente da malásia",
-        "preco": 5.99,
-        "quantidade": 20,
+        "nome": "Rato sem mouse",
+        "descricao": "Tecnologia inovadora diretamente da malásia",
+        "preco": 96.67,
         "img": "rato.webp"
+    },
+    {
+        "id": "1",
+        "nome": "Teclado sem fio e sem tecla",
+        "descricao": "Esqueça o clic-clic-clic. Apresentamos o AirType, o primeiro teclado do mercado 100% sem fio e 100% sem teclas. Projetado para os verdadeiros entusiastas do minimalismo, o AirType redefine o conceito de \"periferia\". Ele não ocupa espaço na sua mesa pela simples razão de que ele não está lá.",
+        "preco": 340.54,
+        "img": "teclado.jpeg"
+    },
+    {
+        "id": "3",
+        "nome": "Mouse Pad de Gelatina",
+        "descricao": "Cansado de almofadas de pulso duras, sem vida e que acumulam poeira? Esqueça o poliéster. Apresentamos o GelType Comfort, o primeiro mouse pad do mundo feito 100% de gelatina industrial de alta densidade (e sabor morango). Projetado para profissionais que passam horas no computador e que frequentemente esquecem de almoçar, o GelType une o ápice da ergonomia à alta gastronomia de escritório.",
+        "preco": 54.99,
+        "img": "mousepad.jpg"
+    },
+    {
+        "id": "4",
+        "nome": "Ram Infinita",
+        "descricao": "Seu computador parece uma carroça quando você abre mais de três abas no navegador? Esqueça os pentes de memória físicos de plástico e silício. Apresentamos a InfiniteRAM, a primeira memória RAM 100% digital, quântica e infinitamente expansível via download.Projetada para quem quer rodar jogos pesados em um computador que mal roda o Paciência, a InfiniteRAM redefine as leis da física e da arquitetura de computadores.",
+        "preco": 9096,
+        "img": "ram.jpg"
+    },
+    {
+        "id": "5",
+        "nome": "Mouse sem rato",
+        "descricao": "Cansado de mouses ergonômicos que parecem naves espaciais e custam uma fortuna? Esqueça os sensores ópticos e os cliques mecânicos. Apresentamos o AirMouse Zero, o único mouse do mercado que não é um mouse. É o ápice do desapego periférico.Por que deslizar um pedaço de plástico sobre um mouse pad de gelatina se você pode simplesmente deslizar o... nada?",
+        "preco": 96.67,
+        "img": "mouse.jpg"
+    },
+    {
+        "id": "6",
+        "nome": "Monitor Transparente",
+        "descricao": "O GlassView Infinite é o produto ideal para setups minimalistas extremistas, pessoas que gostam de limpar vidro com jornal e profissionais que querem fingir que estão analisando planilhas complexas enquanto apenas encaram o vazio.Estoque altamente frágil. Compre agora e receba um pano de microfibra e um frasco de limpa-vidros de brinde!",
+        "preco": 549,
+        "img": "monitor.jpg"
     }
+    
 ]
