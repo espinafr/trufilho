@@ -92,7 +92,10 @@ footer {
     transition: .2s;
 }
 
-#navegacao:hover .dropdown {
+/* style para fazer o dropdown aparecer */
+#navegacao:hover .dropdown, /* Quando o mouse estiver em cima do botão de navegação... */
+#navegacao:focus .dropdown, /* ...ou quando o botão de navegação estiver em foco (selecionado)... */
+#navegacao:active .dropdown { /* ...ou quando o botão de navegação estiver ativo (clicado), altera o estilo do dropdown */
     border-top: 0px;
     display: flex;
 }
