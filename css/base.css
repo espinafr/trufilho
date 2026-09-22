@@ -28,6 +28,10 @@ header .principal {
     color: var(--texto-principal);
 }
 
+header .titulo {
+    font-size: 1em;
+}
+
 header .principal * {
     margin: 0;
 }
@@ -38,9 +42,9 @@ header .logo img {
 }
 
 .divisao {
-    height: 50px;
+    height: 25px;
     background-color: #008B8B;
-    background: linear-gradient(180deg, var(--principal) 50%, #ffffff00 60%, var(--principal) 70%, #ffffff00 80%);
+    background: linear-gradient(180deg, var(--principal) 55%, #ffffff00 56%, #ffffff00 70%, var(--principal) 71%);
 }
 
 main {
