@@ -1,0 +1,10 @@
+[
+    {
+        "id": "0",
+        "nome": "rato sem mouse",
+        "descricao": "tecnologia inovadora diretamente da malásia",
+        "preco": 5.99,
+        "quantidade": 20,
+        "img": "rato.webp"
+    }
+]
