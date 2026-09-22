@@ -69,12 +69,7 @@ footer {
     border: 2px solid var(--secundario);
 }
 
-.dropdown * {
-    text-shadow: none;
-    color: var(--secundario);
-    text-decoration: none;
-    transition: .1s;
-}
+
 
 .dropdown *:hover {
     font-size: large;

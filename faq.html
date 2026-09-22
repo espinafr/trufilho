@@ -1,39 +1,50 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-  <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>FAQ ZikaByte</title>
-      <link rel="stylesheet" href="css/Stalindo.css"> <!-- o css -->
-      <link rel="icon" href="img/faq/dogo.jpg"> 
-  </head>
-
-
-
-
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZikaByte</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/faq.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="manifest" href="img/site.webmanifest">
+</head>
 <body>
-<!-- tutorial avançado: "https://www.youtube.com/watch?v=5fQL08nMB70" -->
-<!-- e o tutorial do footer "https://www.youtube.com/watch?v=pdomr7thueI" -->
-<!-- a hierarquia do topin tá em: nav → ul → vários li → um a dentro de cada li. -->
-
-  <header class="topin">
-  <div class="logao">ZikaByte</div>
-  <nav>
-      <ul>
-        <li><a href="home.html">Home</a></li>
-        <li><a href="sobrenos.html">Sobre Nós</a></li>
-        <li><a href="produto.html">Produtos</a></li>
-        <li><a href="portfolio.html">Portfólio</a></li>
-        <li><a href="Blog">Blog</a></li>
-        <li><a href="faq.html">FAQ</a></li>
-        <li><a href="contato.html">Contato</a></li>
-        <li><a href="carrinho.html">Carrinho</a></li>
-      </ul>
-  </nav>
-  </header>
-
-  <main>
+    <header>
+        <div class="principal">
+            <div class="titulo">
+                <div class="logo">
+                    <img src="img/logotudo.png" alt="Logo do site">
+                </div>
+                <h3>Loja Montagem de Computadores</h3>
+            </div>
+              <div id="navegacao" tabindex="0"> <!-- usado para permitir que celulares cliquem na div -->
+                <p class="botao">Navegação</p>
+                <div class="dropdown">
+                    <a href="index.html">Home</a>
+                    <a href="produtos.html">Produtos</a>
+                    <a href="carrinho.html">Carrinho</a>
+                    <a href="blog.html">Blog</a>
+                    <a href="faq.html">FAQ</a>
+                    <a href="portfolio.html">Portifólio</a>
+                    <a href="sobrenos.html">Sobre nós</a>
+                    <a href="contato.html">Contato</a>
+                </div>
+            </div>
+        </div>
+        <div class="divisao"></div>
+    </header>
+    <main>
     <section class="introzada">
+        <h1>Cuidado com o Zikavirus</h1>
+        <p style="font-size:large;">Tire suas dúvidas sobre o Zikavirus e como se proteger ( Não tem como se proteger ele ja entrou no seu computador ).</p>
+        <p style="font-size:large;">Aqui você encontra todas as informações necessárias para sanar suas duvidas.</p>
+        <p style="font-size:large;">Não se Preucupe o Zikavirus e apenas nosso mascote.</p>
+        <img src="img/faq/zikavirus 2.png " alt="Imagem do Zikavirus" style="width: 300px; height: 300px;"> <b>Zikavirus</b>
+    </section>      
+    <section class="Perguntadas">
       <h1>Perguntas Frequentes</h1>
       <p>Tire suas dúvidas sobre montagem de computadores, prazos, garantia e suporte da ZikaByte.</p>
     </section>
@@ -51,32 +62,23 @@
 
       <details class="cardFaq">
         <summary class="perguntinha">Pergunta</summary>
-        <p class="respostinha">Resposta</p>
+        <p class="respostinha"><br>Resposta</p>
     </details>
 
       <details class="cardFaq">
         <summary class="perguntinha">Pergunta</summary>
-        <p class="respostinha">Resposta</p>
+        <p class="respostinha"><br>Resposta</p>
     </details>
 
       <details class="cardFaq">
         <summary class="perguntinha">Pergunta</summary>
-        <p class="respostinha">Resposta</p>
+        <p class="respostinha"><br>Resposta</p>
     </details>
 
     </section>
   </main>
-
-
-
-  <!-- n sei como vai ser o rodapé ofc mas o "Rodapin" é o rodapé, mudar no css se for bullshitar um novo estilo de rodapas -->
-  <footer class="rodapin">
-    <p>&copy; 2026 ZikaByte - Loja de Montagem de Computadores | Santa Rita do Sapucaí, MG</p>
-    <p>Telefone: 031 940028922 | zikabyte.net</p>
-  </footer>
-
-
-
+    <footer>
+        <p>&copy; 2026 ZikaByte. Nenhum direito reservado.</p>
+    </footer>
 </body>
 </html>
-<!-- 4 segundos fazendo codigo base e 6 horas deixando o faqcard bunitinho "https://br.pinterest.com/pin/30540103721281995/"-->
