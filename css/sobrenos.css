@@ -1,153 +1,94 @@
-/*Cabeçalho*/
-:root {
-    --principal: #008B8B;
-    --secundario: #000080;
-    --texto-principal: #eee;
-    --text-contraste: #111;
-    --bg: #ebebeb;
-}
+/* Main */
 
-html, body {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    min-height: 100vh;
-}
 
-body {
-    display: flex;
-    flex-direction: column;
-    background-color: var(--bg);
-    font-family: "Calibri", sans-serif;
-}
-
-header .principal {
-    padding: 20px 20px 0px 20px;
-    display: flex;
-    justify-content: space-between;
-    background-color: var(--principal);
-    color: var(--texto-principal);
-}
-
-header .principal * {
-    margin: 0;
-}
-
-header .logo img {
-    height: 80px;
-    object-fit: contain;
-}
-
-.divisao {
-    height: 50px;
-    background-color: #008B8B;
-    background: linear-gradient(180deg, var(--principal) 50%, #ffffff00 60%, var(--principal) 70%, #ffffff00 80%);
-}
-
-.dropdown {
-    gap: 5px;
-    z-index: 1;
-    display: none;
-    padding: 0.2em;
-    min-height: 1em;
-    width: 90px;
-    margin-top: -18px;
-    position: absolute;
-    flex-direction: column;
-    background-color: var(--bg);
-    border: 2px solid var(--secundario);
-}
-
-.dropdown * {
-    text-shadow: none;
-    color: var(--secundario);
-    text-decoration: none;
-    transition: .1s;
-}
-
-.dropdown *:hover {
-    font-size: large;
-    text-decoration: underline;
-}
-
-#navegacao .botao {
-    border: 2px solid var(--secundario);
-    background-color: var(--bg);
-    color: var(--secundario);
-    font-size: large;
-    padding: .5em;
-    text-shadow: none;
-    user-select: none;
-    transition: .2s;
-}
-
-#navegacao:hover .dropdown {
-    border-top: 0px;
-    display: flex;
-}
-
-/*Main*/
+/* Configura a área principal da página */
 main {
-    text-align: center;
+    display: flex;                 /* Coloca os elementos lado a lado */
+    padding: 20px 15px;            /* Define o espaço interno */
+    gap: 50px;                     /* Define o espaço entre os elementos */
 }
+
+
+/* Configura a área do texto */
 article {
-    background-color: #000080;
-    color: white;
-    height: auto;
-    width: 30vw;
-}
-p {
- text-align: justify;
-}
-
-/* Rectangle 2 */
-
-.m1{position: absolute;
-width: 373px;
-height: 345px;
-left: 1475px;
-top: 334px;
-
-background: linear-gradient(180deg, #000080 33.65%, #000080 50%, #000080 64.42%, #000031 82.69%, #00001A 94.71%);
+    border: #008B8B 8px solid;     /* Define uma borda de 8px */
+    color: #ffffff;                /* Define a cor do texto */
+    text-align: justify;            /* Deixa o texto justificado */
+    font-family: "calibri", sans-serif; /* Define a fonte */
+    background-color: #000080;     /* Define a cor de fundo */
+    width: 50%;                    /* Define a largura como 50% */
+    padding: 20px 25px;             /* Define o espaço interno */
+    box-sizing: border-box;         /* Inclui padding e borda no tamanho */
 }
 
-/* Rectangle 6 */
 
-.m2{position: absolute;
-width: 373px;
-height: 345px;
-left: 1069px;
-top: 712px;
-
-background: linear-gradient(180deg, #000080 33.65%, #000080 50%, #000080 64.42%, #000031 82.69%, #00001A 94.71%);
+/* Configura os títulos */
+article h2 {
+    text-align: justify;            /* Deixa o título justificado */
+    font-family: "Calibri", sans-serif; /* Define a fonte */
+    font-size: 17px;                /* Define o tamanho da fonte */
+    margin: 0;                      /* Remove a margem */
 }
 
-/* Rectangle 5 */
 
-.m3{position: absolute;
-width: 373px;
-height: 345px;
-left: 1069px;
-top: 334px;
-
-background: linear-gradient(180deg, #000080 33.65%, #000080 50%, #000080 64.42%, #000031 82.69%, #00001A 94.71%);
+/* Configura os parágrafos */
+article p {
+    text-align: justify;            /* Deixa o texto justificado */
+    font-family: "MontSerrat", sans-serif; /* Define a fonte */
+    font-size: 16px;                /* Define o tamanho da fonte */
+    margin: 5px;                    /* Define uma margem de 5px */
 }
 
-/* Rectangle 7 */
 
-.m4{position: absolute;
-width: 373px;
-height: 345px;
-left: 1475px;
-top: 712px;
+/* Área das imagens */
 
-background: linear-gradient(180deg, #000080 33.65%, #000080 50%, #000080 64.42%, #000031 82.69%, #00001A 94.71%);
+
+/* Configura a seção onde estão as imagens */
+section {
+    background-color: #008B8B;     /* Define a cor de fundo */
+    border: #008B8B 1px solid;     /* Define uma borda de 1px */
+    width: 50%;                    /* Define a largura como 50% */
+    padding: 20px 25px;             /* Define o espaço interno */
+    padding-top: 0px;               /* Remove o espaço interno superior */
 }
-/*Rodapé*/
-footer {
-    background-color: var(--principal);
-    color: var(--texto-principal);
-    padding: 1vh;
-    display: flex;
-    justify-content: end;
+
+
+/* Configura todas as imagens dentro do section */
+section img {
+    width: 46%;                    /* Define a largura da imagem */
+    height: 190px;                 /* Define a altura da imagem */
+    margin-top: 5px;                /* Define espaço acima da imagem */
+    margin-bottom: 5px;             /* Define espaço abaixo da imagem */
+}
+
+
+/* Primeira imagem */
+.m1 {
+    padding-top: 0%;               /* Define o espaço interno superior */
+    position: absolute;            /* Retira a imagem do fluxo normal da página */
+    margin-right: 1%;              /* Define espaço à direita */
+}
+
+
+/* Segunda imagem */
+.m2 {
+    padding-top: 15%;              /* Define espaço interno superior */
+    position: absolute;            /* Retira a imagem do fluxo normal da página */
+    margin-right: 1%;              /* Define espaço à direita */
+}
+
+
+/* Terceira imagem */
+.m3 {
+    padding-top: 30%;              /* Define espaço interno superior */
+    position: absolute;            /* Retira a imagem do fluxo normal da página */
+    margin-right: 1%;              /* Define espaço à direita */
+}
+
+
+/* Quarta imagem */
+.m4 {
+    padding-top: 45%;              /* Define espaço interno superior */
+    position: absolute;            /* Retira a imagem do fluxo normal da página */
+    margin-right: 1%;              /* Define espaço à direita */
 }
