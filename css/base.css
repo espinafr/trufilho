@@ -1,4 +1,4 @@
-:root {
+:root { /* definição de variáveis pra facilitar mudança (caso necessário) e padronização */
     --principal: #008B8B;
     --secundario: #000080;
     --texto-principal: #eee;
@@ -12,7 +12,7 @@ html {
 }
 
 html, body {
-    box-sizing: border-box;
+    box-sizing: border-box; /* é pra deixar o padding incluso na contagem de tamanho e altura de uma div (ex: width 30px e padding 10px normalmente resultaria em 50px de largura, mas com border-box ele considera o padding como parte do valor do width, resultando em 30px)*/
     margin: 0;
     padding: 0;
     min-height: 100vh;
@@ -50,7 +50,18 @@ header .logo img {
     height: 25px;
     background-color: #008B8B;
     background: linear-gradient(180deg, var(--principal) 55%, #ffffff00 56%, #ffffff00 70%, var(--principal) 71%);
-}
+    /* 
+    Explicação:
+    1. Define o background como um gradiente em direção a 180 graus (pra baixo) 
+    2. A primeira cor é a --principal e toma 55% do tamanho (nesse caso altura) da div
+    3. A segunda é transparente e começa em 56%
+    4. Pra deixar a linha reta e não com um gradientezinho, a mesma cor permanece até os 70%
+    5. Depois em 71% da div, a cor principal assume novamente
+
+    Essas porcentagens uma em seguida pra da outra é pra fazer uma linha reta, e não um gradiente de fato
+    Usamos a propriedade "gradiente" aqui só pra facilitar "pintar" a div em sessões diferentes
+    */
+} 
 
 main {
     flex-grow: 1;
@@ -66,7 +77,7 @@ footer {
 
 .dropdown {
     gap: 5px;
-    z-index: 1;
+    z-index: 1; /* z-index é a "camada"... definimos como 1 porque o padrão é 0, e o dropdown precisa estar acima do resto (inclusive da div que ele ta dentro))*/
     display: none;
     padding: 0.2em;
     min-height: 1em;
@@ -98,7 +109,7 @@ footer {
     font-size: large;
     padding: .5em;
     text-shadow: none;
-    user-select: none;
+    user-select: none; /* impede que o usuário selecione o texto */
     transition: .2s;
 }
 
