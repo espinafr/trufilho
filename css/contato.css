@@ -1,3 +1,13 @@
+/* variáveis em base.css:
+
+    --principal: #008B8B;
+    --secundario: #000080;
+    --texto-principal: #eee;
+    --text-contraste: #111;
+    --bg: #ebebeb;
+
+*/
+
 main {
     display: flex;
     justify-content: center;
@@ -21,13 +31,26 @@ form {
     display: flex;
     flex-direction: column;
     gap: 1em;
-    background-color: var(--principal);
+    background-color: var(--principal); /* usa a variável que foi setada em base.css */
     padding: 1em;
     border-radius: 10px;
 }
 
 form > * {
     width: 100%;
+}
+
+.info { 
+    display: flex;
+    gap: 10px;
+}
+
+.info > div {
+    display: flex;
+}
+
+.info > div > input {
+    flex-grow: 1;
 }
 
 #assunto {
@@ -46,3 +69,21 @@ textarea {
     border-radius: 10px;
     padding: .5em 2em;
 }
+
+.texto-colorido {
+    color: var(--principal);
+}
+
+/*  @media é uma regra CSS que permite aplicar estilos diferentes com base em condições específicas...
+    essas condições são baseadas em características do dispositivo, como nesse caso, a largura da tela. */
+@media (max-width: 768px) {
+    .centralizado {
+        width: 100vw;
+    }
+}   
+
+@media (max-width: 450px) {
+    .info {
+        flex-direction: column;
+    }
+}   

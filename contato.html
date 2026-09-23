@@ -39,18 +39,33 @@
     <main>
         <div class="centralizado">
             <div class="conteudo">
-                <h1>Contato</h1>
+                <h1>Quer <span class="texto-colorido">falar conosco</span>?</h1>
                 <p>Tem alguma dúvida, sugestão ou reclamação? Contate-nos!</p>
             </div>
             <form>
-                <input type="text" name="assunto" placeholder="Assunto" id="assunto">
-                <div class="info">
-                    <label for="email">Email: </label>
-                    <input type="email" name="email" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="seu@email.aqui">
-                    <label for="telefone">Telefone: </label>
-                    <input type="text" name="telefone" id="telefone" placeholder="(00) 00000-0000">
+                <!-- 
+                    Forms são usados para enviar informações para o servidor
+                    <input>
+                        - São os elementos que coletam informação
+                        - "name" é o que identifica o valor que é mandado para o servidor, basicamente o nome de uma variável
+                        - "id" é usado só para identificação local (no cliente)
+                        - "placehohlder" é um texto que aparece no input antes do usuário escrever algo
+                        - "autocomplete" é o que indica pro navegador do usuário o que deve ser autocompletado naquele campo
+                        - "type" só indica o tipo daquele input
+                        - "required" torna o preenchimento daquele elemento obrigatório
+                -->
+                <input type="text" name="assunto" required placeholder="Assunto" id="assunto" autocomplete="off">
+                <div class="info"> 
+                    <div>
+                        <label for="email">Email: </label>
+                        <input type="email" required autocomplete="email" name="email" id="email" placeholder="seu@email.aqui">
+                    </div>
+                    <div>   
+                        <label for="telefone">Telefone: </label>
+                        <input type="tel" autocomplete="tel" name="telefone" id="telefone" placeholder="(00) 00000-0000">
+                    </div>
                 </div>
-                <textarea name="descricao" id="descricao" placeholder="Escreva aqui!"></textarea>
+                <textarea name="descricao" id="descricao" required placeholder="Escreva aqui!"></textarea>
                 <input type="submit" value="Enviar" id="enviar">
             </form>
         </div>
