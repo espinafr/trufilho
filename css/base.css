@@ -6,6 +6,11 @@
     --bg: #ebebeb;
 }
 
+html {
+    scrollbar-color: var(--principal) var(--bg);
+    scrollbar-width: thin;
+}
+
 html, body {
     box-sizing: border-box;
     margin: 0;
