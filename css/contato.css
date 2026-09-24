@@ -8,6 +8,10 @@
 
 */
 
+:root {
+    --principal-dark: #006363;
+}
+
 main {
     display: flex;
     justify-content: center;
@@ -23,10 +27,6 @@ main {
     margin: 0;
 }
 
-.conteudo {
-    margin-bottom: 20px;
-}
-
 form {
     display: flex;
     flex-direction: column;
@@ -40,27 +40,85 @@ form > * {
     width: 100%;
 }
 
+.questionario-container {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    transition: .4s padding;
+
+    width: 25vw;
+    margin-inline: auto;
+}
+
+.questionario-container:hover {
+    padding-top: .5em;
+    padding-bottom: 1.5em;
+}
+
+.questionario {
+    display: block;
+
+    background: linear-gradient(0deg, var(--principal), var(--bg) 50%);
+    border: 2px solid var(--principal);
+    box-shadow: 0px 0px 0px #00000080;
+    border-radius: 10px;
+
+    color: unset;
+    text-align: center;
+    text-decoration: unset;
+    
+    padding: .5em 1em;
+    transition: .4s;
+}
+
+.questionario-container:hover .questionario {
+    box-shadow: 0px .5em 0px var(--principal-dark);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25em;
+}
+
 .info { 
     display: flex;
     gap: 10px;
+    justify-content: center;
 }
 
 .info > div {
     display: flex;
+    gap: 10px;
+    background-color: var(--bg);
+    padding: .5em;
+    border-radius: 10px;
 }
 
 .info > div > input {
     flex-grow: 1;
+    background-color: transparent;
+    border: none;
+}
+
+input, textarea {
+    width: inherit;
 }
 
 #assunto {
+    border-radius: 5px;
+    border: none;
+    padding: .25em;
     font-weight: bold;
     font-size: large;
 }
 
 textarea {
+    border-radius: 5px;
+    padding: .5em;
     height: 15vh;
     resize: none;
+    font-family: 'Calibri', sans-serif;
+    font-size: large;
 }
 
 #enviar {
@@ -68,15 +126,29 @@ textarea {
     margin: auto auto;
     border-radius: 10px;
     padding: .5em 2em;
+    border-color: var(--principal-dark);
+    cursor: pointer;
 }
 
 .texto-colorido {
     color: var(--principal);
 }
 
+.texto-secundario {
+    color: var(--secundario);
+}
+
 /*  @media é uma regra CSS que permite aplicar estilos diferentes com base em condições específicas...
     essas condições são baseadas em características do dispositivo, como nesse caso, a largura da tela. */
 @media (max-width: 768px) {
+    .conteudo {
+        margin-top: 20px;
+    }
+
+    .questionario-container {
+        width: 100vw;
+    }
+
     .centralizado {
         width: 100vw;
     }
