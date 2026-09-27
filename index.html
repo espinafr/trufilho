@@ -1,24 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
+    <!-- Informações importantes e coisas que n sabemos porque precisa -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- link -->
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/g1style.css">
-    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png"> 
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png"> <!-- imagem icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png"> <!-- imagem icon -->
     <link rel="manifest" href="img/site.webmanifest">
-    <title>Home</title>
+    <title>ZikaByte - Home</title>
 </head>
-<body><header>
+<body>
+    <!-- cabeçalho da pagina -->
+     <!-- "header" -> cabeçalho -->
+    <header>
         <div class="principal">
             <div class="titulo">
                 <div class="logo">
                     <img src="img/logotudo.png" alt="Logo do site">
                 </div>
                 <h3>Loja Montagem de Computadores</h3>
-            </div>
+            </div> 
+            <!-- abaixo, cria a lista de opções para a seleção da pagina -->
             <div id="navegacao" tabindex="0"> <!-- usado para permitir que celulares cliquem na div -->
                 <p class="botao">Navegação</p>
                 <div class="dropdown">
@@ -36,39 +42,125 @@
         <div class="divisao"></div>
     </header>
     <!-- Body -->
-     <!-- Inicial "chamar atenção, informação facil" -->
-    <div>
-    <button id="navprod">Comece a Navegar!</button>
-    <p id="sobreh1">bfhbvhfkjdkbvdhkbvdhbghjdrbhbvdkh</p>
+     <!-- divisão inicial da pagina, basicamente aquela parte do botão x texto
+          ___________
+          | navegar! |  *Texto de informação*
+          ¨¨¨¨¨¨¨¨¨¨¨¨
+          explicação:
+          div "navprod" é uma divisão, serve para separa, criar margin/espaçamento basicamente 
+          classe de "a": btnavprod centraliza no lado: <-
+          div: sobreh1 joga o texto para o lado oposto: -> 
+          
+          -->
+    <div class="navprod">
     </div>
+    <a id="btnavprod" href="produtos.html">Comece sua busca!</a> 
+    <div class="sobreh1">
+    <p>Sejam bem-vindos à ZikaByte, a melhor loja e centro comercial de produtos eletrônicos da América Latina!
+         Aqui você encontra tecnologia de ponta, produtos de procedência questionável e preços que provavelmente
+          não fazem muito sentido... Da mais alta tecnologia aos produtos que você nem sabia que precisava, a ZikaByte tem tudo (ou quase tudo).
+           E se não tiver, provavelmente conseguimos inventar. </p></div>
+
+
     <!-- Mais detalhes, blogs, portifolhos -->
+     <!-- Parte de detalhes:
+      ideia:
+      <div>(class espacodiv) "cor azul", alem de cria um estilo, serve de espaçamento
+        <div>(class sobreinfo1) é uma div que engloba as outras duas divs, posiDireita e posiEsquerda
+            ela define tamanho e ajusta elas para que n quebrem o posicionamento do site.
+            <posiDireita> "Direita"
+            <posiEsquerda>"Esquerda"
+                
+
+            isso se aplica a outra div de detalhes, a diferença é que a imagem e texto troca de lado.
+                ______
+                |imgem|          texto
+                ¨¨¨¨¨¨          ______
+                texto          |imagem|
+                               ¨¨¨¨¨¨¨¨
+        
+        -->
+
+    <div class="espacodiv"></div>
+    <div class="sobreinfo1">
+        <div class="posiDireita">
+            <img src="img/g1/manutencaohomem.png" width="350px" style="border-radius: 5px;">
+        </div>
+        <div class="posiEsquerda">
+            <br><br>
+            <p>Seu computador está com problemas? Não se preocupe! Trabalhamos com montagem, manutenção e upgrades 
+                de computadores. Só não pergunte como fazemos isso... Geralmente utilizamos técnicas avançadas, 
+                completamente desconhecidas pelo mercado e, em casos mais extremos... Fé! Mas pode ter certeza: a gente resolve. </p>
+        </div>
+    </div>
+    <div class="espacodiv2"></div>
+    <div class="sobreinfo1">
+        <div class="posiDireita">
+            <br><br>    
+            <p>Também possuímos nossa própria loja, com produtos exclusivos desenvolvidos por nossos profissionais, 
+                 utilizando habilidades engenhosas e tecnologia de última geração — que talvez nem tenha chegado até
+                  você! Além, é claro, de soluções para problemas que você nem imaginava que tinha.
+                Confira nossos produtos e promoções!</p>
+        </div>
+        <div class="posiEsquerda">
+            <img src="img/g1/zikabyteloja.png" width="350px" style="margin-left: 45%; border-radius: 5px;">
+        </div>
+    </div>
+    <div class="espacodiv2"></div>
+    <!-- fim dos detalhes -->
+
+
+    <!-- Os Card box
+     mesmo esquema da parte de cima basicamente, mas aqui aprendi usar as div kkk
+     
+     <cardbox> - espaçamento
+        <bodyblog> alinhamento e caixa do blog, ela tem tamanho definido e ta alinhada por margin
+        <bodyporti> mesma coisa, mas para o portifolio
+            
+            
+    -->
+
+    <div class="cardbox">
     <div class="bodyblog">
     <h2>Blog</h2>
+    <br>
+    <p>Venha conhecer o nosso Blog,
+    <br>
+    e se mantenha informado sobre 
+    <br>novidades!</p>
     <br><br>
-    <br><br><br><br><br><br>
-    <button class="btnbloport">Blog Aqui!</button>
+    <a class="btnbloport" href="blog.html">Blog Aqui!</a>
     <br>
 
     </div>
     <div class="bodyport">
     <h2>Portifolio</h2>
-    <br><br>
-    <br><br><br><br><br><br>
-    <button class="btnbloport">Porti Aqui!</button>
     <br>
-    
+    <p>Venha conferir o nosso portifolio,
+    <br>
+    e conheça o nosso trabalho!</p>
+    <br><br><br>
+    <a class="btnbloport" href="portfolio.html">Porti Aqui!</a>
+    <br></div></div>
+    <!-- fim das boxs -->
 
-    </div>
-    <div class="bodyrodape">
-        <br><br><br><br><br><br><br><br><br><br>
-        a
-    </div>
+
+    <!-- Contato:
+     É uma div de espaçamento e basicamente texto, imagem e botão centralizado, nenhum segredo -->
+    <div class="contatoespace">
+        <img src="img/logotudo.png" width="130px">
+        <p style="font-size: 30px;">Ficou com alguma duvida?<br>Quer fazer algum orçamento conosco?</p>
+        <p style="font-size: 25px">Entre em contato agora mesmo!</p>
+        <a id="btncontato" href="contato.html">Contato!</a>
+        <!-- fim do "contato" -->
 
 
-    <!-- Roda pé do Site -->
-     <main>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam quas nobis ab, dignissimos autem culpa cum eaque recusandae cumque omnis hic itaque repellat, ex porro harum placeat consequuntur accusamus iusto!</p>
-    </main>
+        <!-- essa div existem mas n precisava, famoso "funciona" (espaçamento) -->
+    <div class="bodyrodape"></div>
+
+
+    <!-- Roda pé do Site 
+     é só isso mesmo, essa parte usa o base.css-->
     <footer>
         <p>&copy; 2026 ZikaByte. Nenhum direito reservado.</p>
     </footer>
