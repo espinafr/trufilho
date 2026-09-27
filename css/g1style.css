@@ -1,74 +1,160 @@
-.bodyhead {
-    text-align: center;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    margin-top: 0%;
-    background-color: #000080;
-
-}
-h1 {
-    
-    font-size: 70px;
-    color: orange;  
-}
+/* estilos globais da pagina*/
 a { 
-    color: white;
-    font-size: 20px;   
-}
-
-#navprod {
-    
-    text-align: right;
-    position: absolute;
-    margin-top: 200px;
-    margin-left: 50px;
-    background-color: orange;
-    color: white;
-    border-radius: 20px;
-    font-size: 50px;
-}
-#sobreh1 {
-    position: absolute;
-    margin-left: 50%;
-    margin-top: 230px;
-    font-size: 20px;
-    color:white;
-}
-.bodyblog {
-    position: absolute;
-    background-color: 008B8B;
-    margin-top: 600px;
-    margin-left: 300px;
-    color: white;
-    background-color: #000080;
-    border-radius: 20px;
-    border-style: double;
-
-}
-.bodyport {
-    position: absolute;
-    background-color: 008B8B;
-    margin-top: 600px;
-    margin-left: 800px;
-    color: white;
-    background-color: #000080;
-    border-radius: 20px;
-    border-style: double;
-    
+    font-family: 'Montserrat', sans-serif;  
 }
 h2 {
     text-align: center;
+    font-family: "Calibri", sans-serif;
 }
-.btnbloport {
-    text-align: center;
+p {
     font-size: 20px;
-    margin-left: 65px;
-    margin-right: 65px;
-    margin-bottom: 30px;
-    background-color: orange;
-    border-radius: 10px;
-    color:white;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
 }
 
+
+/* Botão do inicio da pagina "Comece sua busca" */
+#btnavprod { 
+    background-color: #008B8B;
+    color: snow;    
+    border-radius: 20px;
+    font-size: 40px;
+    text-align: right;
+    position: absolute;
+    margin-top: 15%;
+    margin-left: 15%;
+    border-color: #000080;
+    text-decoration: none;
+}
+/* texto ao lado do botão inicial */
+.navprod {
+    /*essa div tem a função de posicionamento relatico com a div com id: sobreh1*/
+    text-align: right;
+    position: absolute;
+    margin-top: 15%;
+    margin-left: 15%px;
+}
+/* só coisa pa fica "bunito" */
+.sobreh1 {
+    position: absolute;
+    margin-left: 50%;
+    margin-top: 12%;
+    font-size: 20px;
+    color:rgb(0, 0, 0);
+    width: 550px;
+}
+
+
+/* aqui começa as div sobre os "detalhes" */
+.espacodiv {
+    margin-top: 18%;
+    margin-bottom: 5px;
+    text-align: center;
+    height: 10px;
+    background-color: #008B8B;
+    color:#008B8B;
+    border-radius: 10px;
+}
+.sobreinfo1 {
+    background-color: #008B8B;
+    height: 233px;
+    border-radius: 5px;
+    color:snow;
+}
+.posiDireita {
+    position: absolute;
+    width: 650px;
+    left:5%;
+}
+.posiEsquerda { 
+    position: absolute;
+    width: 650px;
+    right: 5%;
+}
+.espacodiv2 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+    height: 10px;
+    background-color: #008B8B;
+    color:#008B8B;
+    border-radius: 20px;
+}
+
+
+
+/* card boxs */
+.cardbox {
+    margin-top: 13%;
+}
+.bodyblog {
+    /*bodyblog é uma das box de destaque*/
+    position: absolute;
+    left: 25%;
+    width: 250px;
+    color: white;
+    background-color: #008B8B   ;
+    border-radius: 20px;
+    border-style: double;
+    border-color: #000080;
+    height: 320px;
+
+}
+.bodyport {
+    /*bodyport é uma das box de destaque*/
+    position: absolute;
+    right: 25%;
+    width: 250px;
+    color: white;
+    background-color: #008B8B;
+    border-radius: 20px;
+    border-style: double;
+    border-color: #000080;
+    height: 320px;
+    
+}
+
+.btnbloport {
+    /*é apenas o layout dos botoes das box*/
+    margin-left: 70px;
+    color: 0 0 0;
+    font-size: 20px;
+    margin-bottom: 30px;
+    background-color: snow;
+    border-radius: 10px;
+    border-color: #000080;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+}
+/* isso cria aquela animação ao passar o dedo no botão, ele muda o style no "hover" // "segurar" */
+.btnbloport:hover {
+    /*troca de cor no "hover"*/
+    text-align: center;
+    font-size: 22px;
+    color:#008B8B;
+    background-color: #000080;
+}
+
+
+/* contato */
+.contatoespace {
+    margin-top: 500px;
+    text-align: center;
+}
+#btncontato { 
+    background-color: #008B8B;
+    color: snow;    
+    border-radius: 20px;
+    font-size: 40px;
+    border-color: #000080;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+}
+
+
+/* definitivamente a classe mais util
+literalmete só um espaçamento */
 .bodyrodape {
-    margin-top:900px;
+    /*no momento, cria espaçamento*/
+    margin-top:70px;
 }
