@@ -1,30 +1,24 @@
+/* estilo da pagina do blog */
+
+/* caixa principal do texto */
 main {
     font-family: "Montserrat", sans-serif;
-    border: 2px solid #000000;
+    border: 2px solid #000080;
     padding: 30px;
     max-width: 900px;
     margin: 0 auto;
 }
 
-.titulo1{
+/* cor dos titulos */
+.titulo-artigos{
     color: #000080;
 }
 
+/* imagens dos posts */
 main img {
     float: left;
     width: 350px;
     height: auto;
-    margin-right: 15px;
-}
-.img2{
-    float: left;
-    width: 350px;
-    height: auto;
-    margin-right: 15px;
-}
-.img3{
-    float: left;
-    width: 350px;
-    height: auto;
-    margin-right: 15px;
+    margin-right: 25px;
+    margin-bottom: 30px;
 }
